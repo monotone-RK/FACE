@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Feb 11 02:18:21 2015
+# Process ID: 6624
+# Log file: C:/Users/kobayashi/Desktop/FPGASort/trunk/vivado/vivado.runs/impl_1/main.vdi
+# Journal file: C:/Users/kobayashi/Desktop/FPGASort/trunk/vivado/vivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
