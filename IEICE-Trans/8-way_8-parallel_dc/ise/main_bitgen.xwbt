@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\kobayashi\Desktop\FPGASort\trunk\ise\main.ncd
-OUTFILE=C:\Users\kobayashi\Desktop\FPGASort\trunk\ise\main.bit
-FAMILY=Virtex7
-PART=xc7vx485t-2ffg1761
-WORKINGDIR=C:\Users\kobayashi\Desktop\FPGASort\trunk\ise
-LICENSE=ISE
-USER_INFO=174123318_174133242_210592318_242
