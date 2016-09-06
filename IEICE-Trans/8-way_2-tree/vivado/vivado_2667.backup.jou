@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Aug 24 12:52:57 2016
+# Process ID: 2667
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/8-way_2-tree/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/8-way_2-tree/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/8-way_2-tree/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+reset_project
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+set_property strategy Performance_Explore [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+close_design
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/8-way_2-tree/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/8-way_2-tree/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

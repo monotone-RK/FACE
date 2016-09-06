@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Aug 24 14:22:18 2016
+# Process ID: 3467
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 5835.191 ; gain = 153.664 ; free physical = 8623 ; free virtual = 25925
+reset_project
+launch_runs impl_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PCIeGen2x8If128'...
+[Wed Aug 24 14:36:50 2016] Launched PCIeGen2x8If128_synth_1, synth_1...
+Run output will be captured here:
+PCIeGen2x8If128_synth_1: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/PCIeGen2x8If128_synth_1/runme.log
+synth_1: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/synth_1/runme.log
+[Wed Aug 24 14:36:50 2016] Launched impl_1...
+Run output will be captured here: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 5885.594 ; gain = 44.848 ; free physical = 12799 ; free virtual = 30233
+launch_runs impl_1 -to_step write_bitstream
+[Wed Aug 24 15:35:22 2016] Launched impl_1...
+Run output will be captured here: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 24 15:38:14 2016...

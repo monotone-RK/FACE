@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 25 17:25:05 2016
+# Process ID: 6666
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 5850.578 ; gain = 168.766 ; free physical = 10607 ; free virtual = 30156
+reset_project
+launch_runs impl_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PCIeGen2x8If128'...
+[Thu Aug 25 17:33:20 2016] Launched PCIeGen2x8If128_synth_1, synth_1...
+Run output will be captured here:
+PCIeGen2x8If128_synth_1: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/PCIeGen2x8If128_synth_1/runme.log
+synth_1: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/synth_1/runme.log
+[Thu Aug 25 17:33:20 2016] Launched impl_1...
+Run output will be captured here: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 5893.426 ; gain = 40.848 ; free physical = 7305 ; free virtual = 26328
+launch_runs impl_1 -to_step write_bitstream
+[Thu Aug 25 19:48:37 2016] Launched impl_1...
+Run output will be captured here: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:05 . Memory (MB): peak = 5920.703 ; gain = 0.000 ; free physical = 2553 ; free virtual = 17568
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 25 19:54:15 2016...

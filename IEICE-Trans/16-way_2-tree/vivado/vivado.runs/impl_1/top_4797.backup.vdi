@@ -1,0 +1,759 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Aug 24 11:34:48 2016
+# Process ID: 4797
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/impl_1
+# Command line: vivado -log top.vdi -applog -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/impl_1/top.vdi
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/PCIeGen2x8If128_synth_1/PCIeGen2x8If128.dcp' for cell 'PCIeGen2x8If128_i'
+INFO: [Netlist 29-17] Analyzing 10491 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 6 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc] for cell 'PCIeGen2x8If128_i/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+create_generated_clock: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2670.512 ; gain = 699.117 ; free physical = 11363 ; free virtual = 29443
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc] for cell 'PCIeGen2x8If128_i/inst'
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/top.xdc:165]
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/src/top.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/PCIeGen2x8If128_synth_1/PCIeGen2x8If128.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5987 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5904 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 9 instances
+
+link_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:07 . Memory (MB): peak = 2670.512 ; gain = 1751.105 ; free physical = 11576 ; free virtual = 29428
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2742.547 ; gain = 64.031 ; free physical = 11575 ; free virtual = 29428
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 189d5ff68
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 37 inverter(s) to 276 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1d391dc1c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2742.547 ; gain = 0.000 ; free physical = 11552 ; free virtual = 29405
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 2201 cells.
+Phase 2 Constant Propagation | Checksum: 1bc7c1970
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2742.547 ; gain = 0.000 ; free physical = 11551 ; free virtual = 29404
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 14644 unconnected nets.
+INFO: [Opt 31-11] Eliminated 1773 unconnected cells.
+Phase 3 Sweep | Checksum: 18946cc0e
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2742.547 ; gain = 0.000 ; free physical = 11551 ; free virtual = 29404
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2742.547 ; gain = 0.000 ; free physical = 11551 ; free virtual = 29404
+Ending Logic Optimization Task | Checksum: 18946cc0e
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2742.547 ; gain = 0.000 ; free physical = 11551 ; free virtual = 29404
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 315 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 272 newly gated: 309 Total Ports: 630
+Number of Flops added for Enable Generation: 38
+
+Ending PowerOpt Patch Enables Task | Checksum: 15a7f758d
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.71 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10587 ; free virtual = 28444
+Ending Power Optimization Task | Checksum: 15a7f758d
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3768.230 ; gain = 1025.684 ; free physical = 10587 ; free virtual = 28444
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:09 ; elapsed = 00:01:16 . Memory (MB): peak = 3768.230 ; gain = 1097.719 ; free physical = 10587 ; free virtual = 28444
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10576 ; free virtual = 28444
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10560 ; free virtual = 28442
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/impl_1/top_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10555 ; free virtual = 28440
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRARDADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1/ADDRBWRADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRARDADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_2/ADDRBWRADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRARDADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wWrPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[10] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[5]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[11] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[6]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[12] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[7]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[13] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[8]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[14] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[9]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[5] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[3]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3 has an input control pin riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/rRAM_reg_3/ADDRBWRADDR[9] (net: riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/mem/wRdPtr[4]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0/ADDRARDADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wRdPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0/ADDRARDADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wRdPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0/ADDRARDADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wRdPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0/ADDRBWRADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wWrPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0/ADDRBWRADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wWrPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_0/ADDRBWRADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wWrPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1/ADDRARDADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wRdPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1/ADDRARDADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wRdPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1/ADDRARDADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wRdPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1/ADDRBWRADDR[6] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wWrPtr[0]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1/ADDRBWRADDR[7] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wWrPtr[1]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1 has an input control pin riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/rRAM_reg_1/ADDRBWRADDR[8] (net: riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/mem/wWrPtr[2]) which is driven by a register (riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 92 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10554 ; free virtual = 28440
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10554 ; free virtual = 28441
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 73403387
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 3768.230 ; gain = 0.000 ; free physical = 10554 ; free virtual = 28440
+WARNING: [Place 30-568] A LUT 'riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/rdPtrEmpty/rDir_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/asyncCompare/rDir_reg {FDCE}
+WARNING: [Place 30-568] A LUT 'riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/wrPtrFull/rDir_i_1__0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/asyncCompare/rDir_reg {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+WARNING: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	dramcon/u_dram/u_dram_mig/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk (IBUFDS.O) is locked to IOB_X1Y276
+	dramcon/u_dram/u_dram_mig/u_iodelay_ctrl/clk_ref_mmcm_gen.mmcm_i (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y6
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 73403387
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:44 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10548 ; free virtual = 28439
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 73403387
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10548 ; free virtual = 28439
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: c828c5fc
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10548 ; free virtual = 28439
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13390d7d3
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10548 ; free virtual = 28439
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1cf0e6ec7
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:54 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10515 ; free virtual = 28408
+Phase 1.2.1 Place Init Design | Checksum: 15661b1ef
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10875 ; free virtual = 28769
+Phase 1.2 Build Placer Netlist Model | Checksum: 15661b1ef
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10875 ; free virtual = 28769
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 15661b1ef
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10874 ; free virtual = 28769
+Phase 1.3 Constrain Clocks/Macros | Checksum: 15661b1ef
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10874 ; free virtual = 28769
+Phase 1 Placer Initialization | Checksum: 15661b1ef
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3784.238 ; gain = 16.008 ; free physical = 10874 ; free virtual = 28769
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 18f0615f3
+
+Time (s): cpu = 00:06:10 ; elapsed = 00:02:50 . Memory (MB): peak = 3824.258 ; gain = 56.027 ; free physical = 10778 ; free virtual = 28673
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18f0615f3
+
+Time (s): cpu = 00:06:11 ; elapsed = 00:02:50 . Memory (MB): peak = 3824.258 ; gain = 56.027 ; free physical = 10776 ; free virtual = 28674
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14e8a6b55
+
+Time (s): cpu = 00:08:34 ; elapsed = 00:03:31 . Memory (MB): peak = 3834.215 ; gain = 65.984 ; free physical = 10372 ; free virtual = 28270
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1495ddb64
+
+Time (s): cpu = 00:08:36 ; elapsed = 00:03:32 . Memory (MB): peak = 3834.215 ; gain = 65.984 ; free physical = 10372 ; free virtual = 28270
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 1495ddb64
+
+Time (s): cpu = 00:08:37 ; elapsed = 00:03:33 . Memory (MB): peak = 3834.215 ; gain = 65.984 ; free physical = 10371 ; free virtual = 28270
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 14290a885
+
+Time (s): cpu = 00:09:01 ; elapsed = 00:03:41 . Memory (MB): peak = 3834.215 ; gain = 65.984 ; free physical = 10371 ; free virtual = 28270
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 11fc6f9be
+
+Time (s): cpu = 00:09:05 ; elapsed = 00:03:45 . Memory (MB): peak = 3834.215 ; gain = 65.984 ; free physical = 10371 ; free virtual = 28270
+
+Phase 3.7 Small Shape Detail Placement
+
+Phase 3.7.1 Commit Small Macros and Core Logic
+
+Phase 3.7.1.1 Commit Slice Clusters
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: 1744c46b3
+
+Time (s): cpu = 00:09:37 ; elapsed = 00:04:15 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10356 ; free virtual = 28255
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 1744c46b3
+
+Time (s): cpu = 00:09:38 ; elapsed = 00:04:16 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10356 ; free virtual = 28255
+
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1744c46b3
+
+Time (s): cpu = 00:09:40 ; elapsed = 00:04:17 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10356 ; free virtual = 28255
+
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1744c46b3
+
+Time (s): cpu = 00:09:42 ; elapsed = 00:04:19 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10355 ; free virtual = 28254
+Phase 3.7 Small Shape Detail Placement | Checksum: 1744c46b3
+
+Time (s): cpu = 00:09:43 ; elapsed = 00:04:20 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10355 ; free virtual = 28254
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 22e0970e4
+
+Time (s): cpu = 00:09:47 ; elapsed = 00:04:24 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10355 ; free virtual = 28254
+Phase 3 Detail Placement | Checksum: 22e0970e4
+
+Time (s): cpu = 00:09:49 ; elapsed = 00:04:25 . Memory (MB): peak = 3837.438 ; gain = 69.207 ; free physical = 10355 ; free virtual = 28254
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+
+Phase 4.1.1 callUpdateTimingBeforePCO
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 2159ee39f
+
+Time (s): cpu = 00:10:54 ; elapsed = 00:04:38 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28246
+
+Phase 4.1.2 updateClock Trees: PCOPT
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 2159ee39f
+
+Time (s): cpu = 00:10:55 ; elapsed = 00:04:39 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28246
+
+Phase 4.1.3 Post Placement Optimization
+
+Phase 4.1.3.1 PCOPT Shape updates
+
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes
+
+Phase 4.1.3.1.1.1 removeInstsFromShapes
+Phase 4.1.3.1.1.1 removeInstsFromShapes | Checksum: 20330cc0b
+
+Time (s): cpu = 00:10:56 ; elapsed = 00:04:41 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28246
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 20330cc0b
+
+Time (s): cpu = 00:10:57 ; elapsed = 00:04:42 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28246
+
+Phase 4.1.3.1.2 deleteLutnmShapes
+
+Phase 4.1.3.1.2.1 deleteShapes
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 1a7a724e1
+
+Time (s): cpu = 00:10:58 ; elapsed = 00:04:43 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 1a7a724e1
+
+Time (s): cpu = 00:10:59 ; elapsed = 00:04:44 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 1a7a724e1
+
+Time (s): cpu = 00:11:00 ; elapsed = 00:04:45 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+
+Phase 4.1.3.2 Post Placement Timing Optimization
+
+Phase 4.1.3.2.1 Restore Best Placement
+Phase 4.1.3.2.1 Restore Best Placement | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:17 ; elapsed = 00:05:01 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.083. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:18 ; elapsed = 00:05:02 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Phase 4.1.3 Post Placement Optimization | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:19 ; elapsed = 00:05:03 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Phase 4.1 Post Commit Optimization | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:20 ; elapsed = 00:05:04 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:21 ; elapsed = 00:05:06 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:22 ; elapsed = 00:05:07 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+
+Phase 4.4 Placer Reporting
+
+Phase 4.4.1 Restore STA
+Phase 4.4.1 Restore STA | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:23 ; elapsed = 00:05:08 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Phase 4.4 Placer Reporting | Checksum: 1ddda480c
+
+Time (s): cpu = 00:11:24 ; elapsed = 00:05:09 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 20c993630
+
+Time (s): cpu = 00:11:25 ; elapsed = 00:05:10 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20c993630
+
+Time (s): cpu = 00:11:27 ; elapsed = 00:05:11 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Ending Placer Task | Checksum: 18ff07fb0
+
+Time (s): cpu = 00:11:27 ; elapsed = 00:05:11 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:11:41 ; elapsed = 00:05:19 . Memory (MB): peak = 3847.438 ; gain = 79.207 ; free physical = 10346 ; free virtual = 28245
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 3879.453 ; gain = 0.000 ; free physical = 10149 ; free virtual = 28243
+write_checkpoint: Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 3880.453 ; gain = 33.016 ; free physical = 10302 ; free virtual = 28242
+report_io: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3880.453 ; gain = 0.000 ; free physical = 10301 ; free virtual = 28242
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3880.453 ; gain = 0.000 ; free physical = 10300 ; free virtual = 28241
+report_control_sets: Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3880.453 ; gain = 0.000 ; free physical = 10300 ; free virtual = 28241
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-20] Rule violation (PLCK-23) Clock Placer Checks - Sub-optimal placement for a clock-capable IO pin and MMCM pair. 
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	dramcon/u_dram/u_dram_mig/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk (IBUFDS.O) is locked to E19
+	dramcon/u_dram/u_dram_mig/u_iodelay_ctrl/clk_ref_mmcm_gen.mmcm_i (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y6
+
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: bf5bb690 ConstDB: 0 ShapeSum: d094c920 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1f8f3462
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3911.469 ; gain = 0.000 ; free physical = 10300 ; free virtual = 28242
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1f8f3462
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3911.469 ; gain = 0.000 ; free physical = 10299 ; free virtual = 28242
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1f8f3462
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3911.469 ; gain = 0.000 ; free physical = 10291 ; free virtual = 28234
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1e0a87d56
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:55 . Memory (MB): peak = 3941.453 ; gain = 29.984 ; free physical = 10228 ; free virtual = 28172
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.056  | TNS=0.000  | WHS=-0.558 | THS=-9874.195|
+
+Phase 2 Router Initialization | Checksum: 155fa33c3
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:07 . Memory (MB): peak = 3941.453 ; gain = 29.984 ; free physical = 10228 ; free virtual = 28172
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1a3b5e506
+
+Time (s): cpu = 00:05:23 ; elapsed = 00:01:31 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10185 ; free virtual = 28129
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 8697
+ Number of Nodes with overlaps = 355
+ Number of Nodes with overlaps = 88
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1552bf429
+
+Time (s): cpu = 00:08:42 ; elapsed = 00:02:15 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10187 ; free virtual = 28131
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.192 | TNS=-4.412 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 2133b53b3
+
+Time (s): cpu = 00:08:47 ; elapsed = 00:02:18 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10187 ; free virtual = 28131
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1c01b724e
+
+Time (s): cpu = 00:08:55 ; elapsed = 00:02:25 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10187 ; free virtual = 28131
+Phase 4.1.2 GlobIterForTiming | Checksum: 1bffa16e7
+
+Time (s): cpu = 00:08:57 ; elapsed = 00:02:27 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10187 ; free virtual = 28131
+Phase 4.1 Global Iteration 0 | Checksum: 1bffa16e7
+
+Time (s): cpu = 00:08:57 ; elapsed = 00:02:27 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10187 ; free virtual = 28131
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 815
+ Number of Nodes with overlaps = 106
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1a9972f5b
+
+Time (s): cpu = 00:09:35 ; elapsed = 00:02:43 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10199 ; free virtual = 28143
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.148 | TNS=-0.800 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 1d6b59556
+
+Time (s): cpu = 00:09:40 ; elapsed = 00:02:45 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10199 ; free virtual = 28143
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1cd6aecdc
+
+Time (s): cpu = 00:09:47 ; elapsed = 00:02:52 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10199 ; free virtual = 28143
+Phase 4.2.2 GlobIterForTiming | Checksum: 1efb9a538
+
+Time (s): cpu = 00:09:49 ; elapsed = 00:02:54 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10199 ; free virtual = 28143
+Phase 4.2 Global Iteration 1 | Checksum: 1efb9a538
+
+Time (s): cpu = 00:09:49 ; elapsed = 00:02:54 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10199 ; free virtual = 28143
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 889
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 227cc3fc4
+
+Time (s): cpu = 00:10:12 ; elapsed = 00:03:05 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10207 ; free virtual = 28151
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.109 | TNS=-0.418 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.3.2 GlobIterForTiming
+
+Phase 4.3.2.1 Update Timing
+Phase 4.3.2.1 Update Timing | Checksum: 1a56df591
+
+Time (s): cpu = 00:10:17 ; elapsed = 00:03:07 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10208 ; free virtual = 28152
+
+Phase 4.3.2.2 Fast Budgeting
+Phase 4.3.2.2 Fast Budgeting | Checksum: 1742fbd9a
+
+Time (s): cpu = 00:10:25 ; elapsed = 00:03:15 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10208 ; free virtual = 28152
+Phase 4.3.2 GlobIterForTiming | Checksum: 1904ebe2c
+
+Time (s): cpu = 00:10:28 ; elapsed = 00:03:17 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10255 ; free virtual = 28199
+Phase 4.3 Global Iteration 2 | Checksum: 1904ebe2c
+
+Time (s): cpu = 00:10:28 ; elapsed = 00:03:18 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10255 ; free virtual = 28199
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 1243
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 0
+
+Phase 4.4.1 Update Timing
+Phase 4.4.1 Update Timing | Checksum: 1ae3720c4
+
+Time (s): cpu = 00:11:11 ; elapsed = 00:03:35 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.280 | TNS=-4.952 | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 1cba5bf58
+
+Time (s): cpu = 00:11:11 ; elapsed = 00:03:36 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+Phase 4 Rip-up And Reroute | Checksum: 1cba5bf58
+
+Time (s): cpu = 00:11:12 ; elapsed = 00:03:36 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1f931267e
+
+Time (s): cpu = 00:11:30 ; elapsed = 00:03:40 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.013  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1f931267e
+
+Time (s): cpu = 00:11:31 ; elapsed = 00:03:40 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1f931267e
+
+Time (s): cpu = 00:11:31 ; elapsed = 00:03:40 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+Phase 5 Delay and Skew Optimization | Checksum: 1f931267e
+
+Time (s): cpu = 00:11:31 ; elapsed = 00:03:41 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 173fb8174
+
+Time (s): cpu = 00:11:54 ; elapsed = 00:03:46 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.013  | TNS=0.000  | WHS=0.016  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 15b1f4702
+
+Time (s): cpu = 00:11:54 ; elapsed = 00:03:47 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10270 ; free virtual = 28214
+WARNING: [Route 35-446] The router encountered 1 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack.
+Resolution: Run report_timing on the design before routing to identify timing paths with higher hold violations and low or negative setup margin.
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.3448 %
+  Global Horizontal Routing Utilization  = 12.7939 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 95.4955%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X43Y296 -> INT_R_X43Y296
+   INT_R_X113Y211 -> INT_R_X113Y211
+   INT_L_X116Y211 -> INT_L_X116Y211
+   INT_L_X114Y209 -> INT_L_X114Y209
+   INT_R_X115Y208 -> INT_R_X115Y208
+South Dir 1x1 Area, Max Cong = 95.4955%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X52Y305 -> INT_L_X52Y305
+   INT_R_X29Y295 -> INT_R_X29Y295
+   INT_R_X29Y291 -> INT_R_X29Y291
+   INT_R_X67Y270 -> INT_R_X67Y270
+   INT_L_X112Y269 -> INT_L_X112Y269
+East Dir 1x1 Area, Max Cong = 94.1176%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X39Y301 -> INT_R_X39Y301
+   INT_R_X39Y300 -> INT_R_X39Y300
+   INT_R_X27Y293 -> INT_R_X27Y293
+   INT_R_X29Y292 -> INT_R_X29Y292
+   INT_L_X68Y271 -> INT_L_X68Y271
+West Dir 2x2 Area, Max Cong = 86.0294%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X80Y224 -> INT_R_X81Y225
+Phase 7 Route finalize | Checksum: 235eb3206
+
+Time (s): cpu = 00:11:56 ; elapsed = 00:03:47 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10269 ; free virtual = 28214
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 235eb3206
+
+Time (s): cpu = 00:11:56 ; elapsed = 00:03:47 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10269 ; free virtual = 28214
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 29d727d1f
+
+Time (s): cpu = 00:12:04 ; elapsed = 00:03:55 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10260 ; free virtual = 28204
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.013  | TNS=0.000  | WHS=0.016  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 29d727d1f
+
+Time (s): cpu = 00:12:04 ; elapsed = 00:03:56 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10260 ; free virtual = 28204
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:12:05 ; elapsed = 00:03:56 . Memory (MB): peak = 3955.438 ; gain = 43.969 ; free physical = 10260 ; free virtual = 28204
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+62 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:12:18 ; elapsed = 00:04:03 . Memory (MB): peak = 3955.438 ; gain = 74.984 ; free physical = 10260 ; free virtual = 28204
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 3987.453 ; gain = 0.000 ; free physical = 10013 ; free virtual = 28205
+write_checkpoint: Time (s): cpu = 00:00:45 ; elapsed = 00:00:27 . Memory (MB): peak = 3988.453 ; gain = 33.016 ; free physical = 10205 ; free virtual = 28203
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/kobayashi/PCIe_test/branches/IEICE/16-way_2-tree/vivado/vivado.runs/impl_1/top_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4019.469 ; gain = 31.016 ; free physical = 10135 ; free virtual = 28133
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:01:47 ; elapsed = 00:00:22 . Memory (MB): peak = 4019.469 ; gain = 0.000 ; free physical = 10121 ; free virtual = 28133
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:37 ; elapsed = 00:00:14 . Memory (MB): peak = 4019.469 ; gain = 0.000 ; free physical = 10119 ; free virtual = 28132
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 24 11:48:58 2016...

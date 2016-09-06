@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Sep  1 02:26:32 2016
+# Process ID: 15650
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/bandwidth/PCIe/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/bandwidth/PCIe/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/bandwidth/PCIe/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+INFO: [Project 1-313] Project file moved from '/home/kobayashi/nop/PCIe_bandwidth/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 5831.469 ; gain = 153.727 ; free physical = 10896 ; free virtual = 31265
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  1 02:27:23 2016...

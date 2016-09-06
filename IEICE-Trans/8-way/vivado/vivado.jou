@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 25 23:32:23 2016
+# Process ID: 2752
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+open_run impl_1
+report_utilization -name utilization_1

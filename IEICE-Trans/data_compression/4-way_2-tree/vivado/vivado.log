@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Aug 28 22:12:20 2016
+# Process ID: 3267
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 5864.781 ; gain = 195.047 ; free physical = 14443 ; free virtual = 31394
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 4593 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/.Xil/Vivado-3267-fpgaserv/dcp/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+create_generated_clock: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 7133.129 ; gain = 680.777 ; free physical = 12986 ; free virtual = 30256
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/.Xil/Vivado-3267-fpgaserv/dcp/top_early.xdc]
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/.Xil/Vivado-3267-fpgaserv/dcp/top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/src/top.xdc:165]
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/.Xil/Vivado-3267-fpgaserv/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7270.086 ; gain = 101.289 ; free physical = 12849 ; free virtual = 30119
+Restored from archive | CPU: 5.460000 secs | Memory: 97.540970 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7270.086 ; gain = 101.289 ; free physical = 12849 ; free virtual = 30119
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2242 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, OBUFTDS_DCIEN, OBUFTDS_DCIEN, INV): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 2159 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 9 instances
+
+open_run: Time (s): cpu = 00:01:15 ; elapsed = 00:01:13 . Memory (MB): peak = 7501.574 ; gain = 1636.793 ; free physical = 12738 ; free virtual = 29875
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 7580.301 ; gain = 1.004 ; free physical = 12538 ; free virtual = 29685
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 7580.301 ; gain = 1.004 ; free physical = 12538 ; free virtual = 29685
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203341351A
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 7637.078 ; gain = 10.008 ; free physical = 12449 ; free virtual = 29628
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/data_compression/4-way_2-tree/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7638.074 ; gain = 0.000 ; free physical = 12451 ; free virtual = 29630
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 28 22:21:28 2016...

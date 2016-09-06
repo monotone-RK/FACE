@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Aug 28 22:33:07 2016
+# Process ID: 2310
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 5857.512 ; gain = 179.430 ; free physical = 12453 ; free virtual = 29352
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 6942 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado/.Xil/Vivado-2310-fpgaserv/dcp/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+create_generated_clock: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 7260.188 ; gain = 716.500 ; free physical = 12860 ; free virtual = 30130
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado/.Xil/Vivado-2310-fpgaserv/dcp/top_early.xdc]
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado/.Xil/Vivado-2310-fpgaserv/dcp/top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/src/top.xdc:165]
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/data_compression/8-way_2-tree/vivado/.Xil/Vivado-2310-fpgaserv/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7440.301 ; gain = 144.441 ; free physical = 12682 ; free virtual = 29953
+Restored from archive | CPU: 6.820000 secs | Memory: 139.421181 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7440.301 ; gain = 144.441 ; free physical = 12682 ; free virtual = 29953
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3635 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, OBUFTDS_DCIEN, OBUFTDS_DCIEN, INV): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 3552 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 9 instances
+
+open_run: Time (s): cpu = 00:01:27 ; elapsed = 00:01:20 . Memory (MB): peak = 7721.492 ; gain = 1863.980 ; free physical = 12571 ; free virtual = 29667
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 7812.570 ; gain = 0.000 ; free physical = 12368 ; free virtual = 29473
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 7812.570 ; gain = 0.000 ; free physical = 12368 ; free virtual = 29473
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 28 22:39:23 2016...

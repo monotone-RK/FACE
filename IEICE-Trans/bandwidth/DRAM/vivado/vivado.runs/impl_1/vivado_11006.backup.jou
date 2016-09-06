@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Aug 31 18:34:12 2016
+# Process ID: 11006
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/bandwidth/DRAM/vivado/vivado.runs/impl_1
+# Command line: vivado -log main.vdi -applog -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/bandwidth/DRAM/vivado/vivado.runs/impl_1/main.vdi
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/bandwidth/DRAM/vivado/vivado.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

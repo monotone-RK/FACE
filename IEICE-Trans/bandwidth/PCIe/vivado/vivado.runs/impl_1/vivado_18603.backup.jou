@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jul 14 19:04:57 2016
+# Process ID: 18603
+# Current directory: /home/kobayashi/PCIe_test/0.0.8/vivado/vivado.runs/impl_1
+# Command line: vivado -log VC707_Gen2x8If128.vdi -applog -messageDb vivado.pb -mode batch -source VC707_Gen2x8If128.tcl -notrace
+# Log file: /home/kobayashi/PCIe_test/0.0.8/vivado/vivado.runs/impl_1/VC707_Gen2x8If128.vdi
+# Journal file: /home/kobayashi/PCIe_test/0.0.8/vivado/vivado.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source VC707_Gen2x8If128.tcl -notrace

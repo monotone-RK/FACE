@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 25 23:32:23 2016
+# Process ID: 2752
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 5851.879 ; gain = 171.953 ; free physical = 13885 ; free virtual = 31060
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3595 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/.Xil/Vivado-2752-fpgaserv/dcp/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+create_generated_clock: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 7080.938 ; gain = 656.359 ; free physical = 11831 ; free virtual = 29183
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/.Xil/Vivado-2752-fpgaserv/dcp/top_early.xdc]
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/.Xil/Vivado-2752-fpgaserv/dcp/top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/8-way/src/top.xdc:165]
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/.Xil/Vivado-2752-fpgaserv/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7197.555 ; gain = 80.617 ; free physical = 10957 ; free virtual = 28529
+Restored from archive | CPU: 5.780000 secs | Memory: 83.304863 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7197.555 ; gain = 80.617 ; free physical = 10957 ; free virtual = 28529
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1855 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, OBUFTDS_DCIEN, OBUFTDS_DCIEN, INV): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 1772 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 9 instances
+
+open_run: Time (s): cpu = 00:01:12 ; elapsed = 00:01:32 . Memory (MB): peak = 7412.793 ; gain = 1560.914 ; free physical = 8972 ; free virtual = 26478
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 7467.703 ; gain = 8.117 ; free physical = 6592 ; free virtual = 24259
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 7467.703 ; gain = 8.117 ; free physical = 6592 ; free virtual = 24259
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 25 23:37:51 2016...

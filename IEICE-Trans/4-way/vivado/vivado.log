@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 25 23:25:45 2016
+# Process ID: 2371
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado
+# Command line: vivado vivado.xpr
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 5830.152 ; gain = 159.641 ; free physical = 14528 ; free virtual = 31431
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2535 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/.Xil/Vivado-2371-fpgaserv/dcp/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/kobayashi/PCIe_test/branches/IEICE/4-way/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/4-way/src/ip_pcie/source/PCIeGen2x8If128-PCIE_X1Y0.xdc:121]
+create_generated_clock: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 7019.332 ; gain = 642.773 ; free physical = 13168 ; free virtual = 30344
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/.Xil/Vivado-2371-fpgaserv/dcp/top_early.xdc]
+Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/.Xil/Vivado-2371-fpgaserv/dcp/top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/kobayashi/PCIe_test/branches/IEICE/4-way/src/top.xdc:165]
+Finished Parsing XDC File [/home/kobayashi/PCIe_test/branches/IEICE/4-way/vivado/.Xil/Vivado-2371-fpgaserv/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7121.527 ; gain = 68.191 ; free physical = 12742 ; free virtual = 29919
+Restored from archive | CPU: 4.110000 secs | Memory: 68.389969 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7121.527 ; gain = 68.191 ; free physical = 12742 ; free virtual = 29919
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1159 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, OBUFTDS_DCIEN, OBUFTDS_DCIEN, INV): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 1076 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 9 instances
+
+open_run: Time (s): cpu = 00:01:06 ; elapsed = 00:01:18 . Memory (MB): peak = 7330.438 ; gain = 1485.152 ; free physical = 12420 ; free virtual = 29522
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 7370.492 ; gain = 4.000 ; free physical = 11489 ; free virtual = 28754
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 25 23:30:52 2016...

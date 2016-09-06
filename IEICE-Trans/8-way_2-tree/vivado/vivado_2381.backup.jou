@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Aug 16 23:36:02 2016
+# Process ID: 2381
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado
+# Command line: vivado
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project vivado . -part xc7vx485tffg1761-2
+set_property board_part xilinx.com:vc707:part0:1.2 [current_project]
+add_files /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/define.vh
+add_files {/home/kobayashi/PCIe_test/branches/IEICE/8-way/src/riffa /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/sorter.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_dram /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/top.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/user_logic.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/dramcon.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/riffa_wrapper_vc707.v}
+add_files -norecurse /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_pcie/PCIeGen2x8If128.xci
+export_ip_user_files -of_objects  [get_files  /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_pcie/PCIeGen2x8If128.xci] -force -quiet
+add_files -fileset constrs_1 -norecurse /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/top.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

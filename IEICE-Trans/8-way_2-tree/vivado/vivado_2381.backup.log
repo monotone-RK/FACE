@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Aug 16 23:36:02 2016
+# Process ID: 2381
+# Current directory: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado
+# Command line: vivado
+# Log file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.log
+# Journal file: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project vivado . -part xc7vx485tffg1761-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 5791.797 ; gain = 37.109 ; free physical = 12541 ; free virtual = 29423
+set_property board_part xilinx.com:vc707:part0:1.2 [current_project]
+add_files /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/define.vh
+add_files {/home/kobayashi/PCIe_test/branches/IEICE/8-way/src/riffa /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/sorter.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_dram /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/top.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/user_logic.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/dramcon.v /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/riffa_wrapper_vc707.v}
+add_files -norecurse /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_pcie/PCIeGen2x8If128.xci
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+export_ip_user_files -of_objects  [get_files  /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/ip_pcie/PCIeGen2x8If128.xci] -force -quiet
+add_files -fileset constrs_1 -norecurse /home/kobayashi/PCIe_test/branches/IEICE/8-way/src/top.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PCIeGen2x8If128'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PCIeGen2x8If128'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PCIeGen2x8If128'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PCIeGen2x8If128'...
+[Tue Aug 16 23:40:59 2016] Launched PCIeGen2x8If128_synth_1, synth_1...
+Run output will be captured here:
+PCIeGen2x8If128_synth_1: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/PCIeGen2x8If128_synth_1/runme.log
+synth_1: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/synth_1/runme.log
+[Tue Aug 16 23:40:59 2016] Launched impl_1...
+Run output will be captured here: /home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 5866.668 ; gain = 50.152 ; free physical = 14488 ; free virtual = 31406
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203341351A
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/kobayashi/PCIe_test/branches/IEICE/8-way/vivado/vivado.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 5979.656 ; gain = 0.000 ; free physical = 14059 ; free virtual = 31304
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 17 00:00:03 2016...
